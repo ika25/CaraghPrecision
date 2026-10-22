@@ -1,0 +1,259 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.employeeDirectory {
+  padding: 24px;
+  background: #ffffff;
+  color: #242424;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.header {
+  margin-bottom: 24px;
+
+  h2 {
+    margin: 0 0 6px;
+    color: #006b3c;
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  p {
+    margin: 0;
+    color: #616161;
+    font-size: 15px;
+  }
+}
+
+.filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+
+  input,
+  select {
+    box-sizing: border-box;
+    height: 42px;
+    padding: 0 12px;
+    border: 1px solid #d1d1d1;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #242424;
+    font-size: 14px;
+  }
+
+  input {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  select {
+    min-width: 180px;
+  }
+
+  input:focus,
+  select:focus {
+    border-color: #00854a;
+    outline: 2px solid rgba(0, 133, 74, 0.15);
+  }
+}
+
+.resultsBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  color: #616161;
+  font-size: 13px;
+
+  button {
+    padding: 6px 10px;
+    border: 0;
+    background: transparent;
+    color: #006b3c;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:focus {
+      outline: 2px solid #006b3c;
+      outline-offset: 2px;
+    }
+  }
+}
+
+
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.employeeCard {
+  display: flex;
+  gap: 16px;
+  padding: 18px;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  background: #ffffff;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+
+  &:hover {
+    border-color: #b7b7b7;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.avatar {
+  display: flex;
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #006b3c;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.employeeInfo {
+  min-width: 0;
+  flex: 1;
+
+  h3 {
+    margin: 0 0 3px;
+    color: #242424;
+    font-size: 17px;
+    font-weight: 600;
+  }
+}
+
+.jobTitle {
+  margin-bottom: 10px;
+  color: #616161;
+  font-size: 14px;
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  margin-bottom: 12px;
+  color: #616161;
+  font-size: 13px;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: center;
+  font-size: 13px;
+
+  a {
+    color: #006b3c;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.extension {
+  padding: 3px 7px;
+  border-radius: 4px;
+  background: #edf7f1;
+  color: #005a32;
+  font-weight: 600;
+}
+
+.noResults {
+  grid-column: 1 / -1;
+  padding: 40px;
+  border: 1px dashed #c8c8c8;
+  border-radius: 8px;
+  color: #616161;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .employeeDirectory {
+    padding: 12px;
+  }
+
+  .header {
+    margin-bottom: 18px;
+
+    h2 {
+      font-size: 22px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .filters {
+    flex-direction: column;
+    gap: 8px;
+
+    input,
+    select {
+      width: 100%;
+      min-width: 0;
+    }
+  }
+
+  .resultsBar {
+    margin-bottom: 12px;
+  }
+
+  .results {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .employeeCard {
+    padding: 14px;
+    gap: 12px;
+  }
+
+  .avatar {
+    flex-basis: 42px;
+    width: 42px;
+    height: 42px;
+    font-size: 14px;
+  }
+
+  .employeeInfo {
+    min-width: 0;
+
+    h3 {
+      font-size: 16px;
+    }
+  }
+
+  .details {
+    gap: 5px 10px;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+
+    a {
+      max-width: 100%;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+  }
+}

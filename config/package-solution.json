@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "caragh-precision-client-side-solution",
+    "id": "d78072ae-2585-4588-a25c-a8f232d7f3e4",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.24.0-rc.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "caragh-precision description"
+      },
+      "longDescription": {
+        "default": "caragh-precision description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "caragh-precision Feature",
+        "description": "The feature that activates elements of the caragh-precision solution.",
+        "id": "755d72d7-0a9e-4dc9-9e1a-1079d718d392",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/caragh-precision.sppkg"
+  }
+}

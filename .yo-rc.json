@@ -1,0 +1,18 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "useGulp": false,
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "26.7.0",
+    "sdksVersions": {},
+    "version": "1.24.0-rc.0",
+    "libraryName": "caragh-precision",
+    "libraryId": "d78072ae-2585-4588-a25c-a8f232d7f3e4",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "caragh-precision",
+    "solutionShortDescription": "caragh-precision description",
+    "skipFeatureDeployment": true,
+    "componentType": "webpart"
+  }
+}

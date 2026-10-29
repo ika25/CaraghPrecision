@@ -2,8 +2,8 @@
   "@microsoft/generator-sharepoint": {
     "useGulp": false,
     "plusBeta": false,
-    "isCreatingSolution": true,
-    "nodeVersion": "26.7.0",
+    "isCreatingSolution": false,
+    "nodeVersion": "26.12.1",
     "sdksVersions": {},
     "version": "1.24.0-rc.0",
     "libraryName": "caragh-precision",

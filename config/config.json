@@ -9,10 +9,19 @@
           "manifest": "./src/webparts/employeeDirectory/EmployeeDirectoryWebPart.manifest.json"
         }
       ]
+    },
+    "caragh-assistant-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/caraghAssistant/CaraghAssistantWebPart.js",
+          "manifest": "./src/webparts/caraghAssistant/CaraghAssistantWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "EmployeeDirectoryWebPartStrings": "lib/webparts/employeeDirectory/loc/{locale}.js"
+    "EmployeeDirectoryWebPartStrings": "lib/webparts/employeeDirectory/loc/{locale}.js",
+    "CaraghAssistantWebPartStrings": "lib/webparts/caraghAssistant/loc/{locale}.js"
   }
 }
